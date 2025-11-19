@@ -1,8 +1,9 @@
-// This file has intentional linting errors to test the workflow
-const unusedVariable = "This variable is never used"
-
+// This file has been fixed to pass linting
 function exampleFunction() {
-  console.log("This should trigger a warning")
-  let message = "This uses double quotes instead of single"
-  return message
+  console.log('This should trigger a warning');
+  let message = 'This now uses single quotes instead of double';
+  return message;
 }
+
+// Export the function to avoid unused function error
+module.exports = exampleFunction;
